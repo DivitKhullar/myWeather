@@ -1,8 +1,10 @@
 # WeatherApp
 
 This is an API based Angular Project that will display the weather record of the city that is entered by the user.
-API used is openweathermap 
-Link for the API is: "https://openweathermap.org/api"
+
+API used is openweathermap.
+
+Link for the API is: https://openweathermap.org/api.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
