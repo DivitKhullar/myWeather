@@ -1,0 +1,13 @@
+<div class="row displayBox">
+    <div class="leftElement">
+            <p>{{item.weather[0].description}}</p>  
+            <p><img src="http://openweathermap.org/img/w/{{item.weather[0].icon}}.png"> {{item.main.temp}} C </p>
+            
+    </div>
+    <div class="rightElement">
+           <p>Humidity: {{item.main.humidity}}</p>
+           <p>Wind Speed: {{item.wind.speed}}</p> 
+           
+    </div>
+</div>
+

@@ -1,0 +1,11 @@
+.displayBox {
+    width: 600px;
+    border-top: 2px;
+}
+.leftElement {
+    flex: 1;
+}
+
+.rightElement {
+    flex:1;
+}

@@ -1,0 +1,12 @@
+<div class="container">
+<h1> Enter City</h1>
+<input type="text" name="City" [(ngModel)]="city">
+<button type="button" (click)=getCity()>Get city</button>
+
+<ng-container *ngFor="let item of result.list let i = index" [attr.data-index]="i" >
+    <div *ngIf="i%8==0">
+        {{item.dt_txt}}
+         <app-displaybox [item] = item></app-displaybox>
+         <hr>
+    </div> 
+     </ng-container>
