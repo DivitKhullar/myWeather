@@ -1,12 +1,20 @@
 <div class="container">
 <h1> Enter City</h1>
-<input type="text" name="City" [(ngModel)]="city">
-<button type="button" (click)=getCity()>Get city</button>
+<p>
+        <span class="input">
+<input type="text" placeholder="City Name" name="City" [(ngModel)]="city">
+<span></span>	
+	</span>
+</p>
+<button class="button" type="button" (click)=getCity()><span>Search!</span></button>
 
 <ng-container *ngFor="let item of result.list let i = index" [attr.data-index]="i" >
     <div *ngIf="i%8==0">
+        <br>
         {{item.dt_txt}}
-         <app-displaybox [item] = item></app-displaybox>
+        <b><app-displaybox [item] = item></app-displaybox> </b>
          <hr>
     </div> 
      </ng-container>
+
+     
