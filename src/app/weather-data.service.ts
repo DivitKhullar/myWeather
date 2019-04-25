@@ -8,7 +8,7 @@ export class WeatherDataService {
   apiKey='4e1a0e349625b71cdcfab5c742777e74';
   url:string  ;
   constructor(private http:HttpClient) { 
-    this.url='http://api.openweathermap.org/data/2.5/forecast?q=';
+    this.url='https://api.openweathermap.org/data/2.5/forecast?q=';
   }
 
   getWeather(city) {
